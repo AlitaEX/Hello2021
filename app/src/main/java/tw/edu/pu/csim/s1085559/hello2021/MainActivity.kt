@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         //var txv: TextView = findViewById<TextView>(R.id.txv)
         //txv.text = "Hello tcyang"
         //TestMaster()
-        txv.text = "嗨，我是楊子青"
+        txv.text =  "嗨，我是黃景明"
     }
     fun TestMaster(){
         var txv:TextView = findViewById<TextView>(R.id.txv)
