@@ -2,6 +2,7 @@ package tw.edu.pu.csim.s1085559.hello2021
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MotionEvent
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         //var txv: TextView = findViewById<TextView>(R.id.txv)
         //txv.text = "Hello tcyang"
         //TestMaster()
-        txv.text =  "嗨，我是黃景明"
+        txv.text = "嗨，我是黃景明"
     }
     fun TestMaster(){
         var txv:TextView = findViewById<TextView>(R.id.txv)
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
         var txv:TextView = findViewById<TextView>(R.id.txv)
         txv.text = "Dev分支"
     }
+    override fun onTouchEvent(event: MotionEvent?): Boolean {
+        var txv:TextView = findViewById<TextView>(R.id.txv)
+        txv.text = "tcyangpu修改螢幕觸控"
+        return true
+}
 
     }
 }
